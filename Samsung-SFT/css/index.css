@@ -1,0 +1,132 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background: #e3e3e3;
+  height: 100vh;
+  color: white;
+}
+
+header {
+  width: 100%;
+}
+
+header h1 {
+  color: #000000;
+  font-family: Poppins;
+  font-weight: bolder;
+  font-size: 3em;
+  padding: 0 8%;
+}
+
+.flex1 {
+  width: 100vw;
+  height: 28vh;
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  border-radius: 5px;
+  overflow-y: hidden;
+}
+
+.flexitem1 {
+  background: #616161;
+  color: white;
+  width: 40vw;
+  height: 28vh;
+  justify-content: center;
+  align-items: center;
+  flex: 0 0 auto;
+  box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.2);
+  background-repeat: no-repeat;
+}
+
+.flexitem1 p {
+  width: 100%;
+  height: 3vh;
+  background: rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(10px);
+  color: black;
+  background-size: cover;
+  font-family: Poppins;
+}
+
+.flexitem1:not(:last-child) {
+  margin-right: 3%;
+}
+
+.flexitem1:first-child {
+  margin-left: 8vw;
+}
+
+.flexitem1:last-child {
+  margin-right: 4vw;
+}
+
+h3 {
+  color: black;
+  font-family: Public Sans;
+  font-weight: 400;
+  padding: 0 8vw;
+}
+
+.list1 {
+  box-shadow: inset 0px 15px 15px 5px rgba(0, 0, 0, 0.2);
+  width: 96vw;
+  height: auto;
+  margin: auto;
+  border-radius: 5px;
+}
+
+.listitem1 {
+  box-shadow: inset 0px 5px 10px 2.5px rgba(0, 0, 0, 0.2);
+  width: 96vw;
+  height: 10vh;
+  margin-bottom: 1vh;
+  border-radius: 5px;
+  background: #a6a6a6;
+  font-family: Corben;
+  font-size: 2em;
+}
+
+.navfoot {
+  width: 100%;
+  height: 5vh;
+  display: flex;
+  background: #858585;
+  position: fixed;
+  margin-top: 5vh;
+  bottom: 0;
+  justify-content: space-evenly;
+  align-items: center;
+  z-index: 100;
+}
+
+.navfoot > * {
+  width: 4.5vh;
+  height: 4.5vh;
+}
+
+.navfoot > *:nth-child(1) {
+  background: url('/images/menu.png');
+  background-size: contain;
+  border: none;
+  background-repeat: no-repeat;
+}
+
+.navfoot > *:nth-child(2) {
+  background: url('/images/profile.png');
+  background-size: contain;
+  border: none;
+  background-repeat: no-repeat;
+}
+
+.navfoot > *:nth-child(3) {
+  background: url('/images/sites.png');
+  background-size: contain;
+  border: none;
+  background-position: center;
+  background-repeat: no-repeat;
+}
