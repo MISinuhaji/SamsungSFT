@@ -1,0 +1,124 @@
+html {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+#sitenotification {
+  height: 15vh;
+  width: 98%; 
+  position: absolute; 
+  top: 1%;
+  left: 1%;
+  z-index: 2;
+  border: 2px solid #ffffff;
+  border-radius: 5px;
+  background: rgba(255, 255, 255, 0.4);
+  padding: 1% 0;
+  color: black;
+  backdrop-filter: blur(15px);
+  margin-left: auto;
+  user-select: none;
+  transition: height 0.5s;
+}
+
+#reportinst {
+  height: 15vh;
+  width: 98%; 
+  position: absolute; 
+  top: 1%;
+  left: 1%;
+  z-index: 2;
+  border: 2px solid #ffffff;
+  border-radius: 5px;
+  background: rgba(255, 255, 255, 0.4);
+  color: black;
+  backdrop-filter: blur(15px);
+  margin-left: auto;
+  user-select: none;
+  transition: height 0.5s;
+}
+
+#map {
+  filter: brightness(125%) contrast(100%);
+}
+
+#markerCount {
+  font-family: arial;
+  font-size: 100em;
+}
+
+.leaflet-verticalcenter {
+    position: fixed;
+    z-index: 1000;
+    pointer-events: none;
+    top: 50%; /* possible because the placeholder's parent is the map */
+    transform: translateY(-50%); /* using the CSS3 Transform technique */
+    padding-top: 10px;
+}
+
+.leaflet-verticalcenter .leaflet-control {
+    margin-bottom: 10px;
+}
+
+.leaflet-container {
+  background: #171717 !important; 
+}
+
+.navfoot {
+  width: 100%;
+  height: 5vh;
+  display: flex;
+  background: #858585;
+  position: absolute;
+  bottom: 0;
+  justify-content: space-evenly;
+  align-items: center;
+  z-index: 100;
+}
+
+.navfoot > * {
+  width: 4.5vh;
+  height: 4.5vh;
+}
+
+.navfoot > *:nth-child(1) {
+  background: url('/images/menu.png');
+  background-size: contain;
+  border: none;
+  background-repeat: no-repeat;
+}
+
+.navfoot > *:nth-child(2) {
+  background: url('/images/profile.png');
+  background-size: contain;
+  border: none;
+  background-repeat: no-repeat;
+}
+
+.navfoot > *:nth-child(3) {
+  background: url('/images/sites.png');
+  background-size: contain;
+  border: none;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-repeat: no-repeat;
+}
+
+#pulley {
+  background: url('/images/pulley.png');
+  position: absolute;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  bottom: -7.5%;
+  left: calc(50% - 15vw);
+  height: 2.5vh;
+  width: 30vw;
+  z-index: 100;
+  transition: bottom 0.5s;
+}
